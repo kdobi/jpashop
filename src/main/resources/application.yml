@@ -2,7 +2,7 @@
 
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost/~/jpashop;MVCC=TRUE
+    url: jdbc:h2:tcp://localhost/~/jpashop
     username: sa
     password:
     driver-class-name: org.h2.Driver
@@ -24,4 +24,6 @@ logging:
     org.hibernate.SQL: debug
     # 하이버 네이트가 남기는 모든 로그가 디버그 모드로 돼서 JPA나 하이버네이트가 생성하는 SQL이 다 보임
     # 위에 있는 show_sql은 System.out에 출력 , 얘는 로거에 출력
+    org.hibernate.orm.jdbc.bind: trace
+    # (? , ?) 추적하면 이렇게 나오는 쿼리문 뭐지 알려줌
 
