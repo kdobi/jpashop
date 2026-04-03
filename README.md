@@ -8,6 +8,11 @@
 - JPA
 - Hibernate
 
+
+- H2 DB 연동 
+  - cd ~/Desktop/h2/bin
+  - java -jar h2-1.4.199.jar
+
 ---
 ## 도메인 요구사항 분석
 
@@ -53,6 +58,4 @@
 추가사항
 - API 개발
 - 성능 최적화  ➡️ JPA  ➡️ 6단계로 튜닝
-
-
 
